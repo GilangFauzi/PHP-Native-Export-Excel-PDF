@@ -1,0 +1,200 @@
+
+
+/* input */
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: sans-serif;
+	font-size: 13px;
+
+}
+#container{
+	width: 99%;
+	margin:  0px auto; // 1px(atas) 1px(bawah) 5px(kiri) 5px(kanan)
+	border: 6px solid #919191;
+	background-color: #F8F8FF;
+	/*background-color: #C4C4C4;*/
+}
+#header-top{
+	width: 100%;
+	height: 100px;
+	background: linear-gradient(#000046, #1cb5e0);
+	border-top: 3px solid #1cb5e0;
+	border-bottom: 3px solid #1cb5e0;
+}
+#title-container{
+	float: left;
+	width: 97%;
+	padding: 10px;
+	color: white;
+}
+.subtitle-container{
+	float: left;
+	width: 100%;
+	padding: 6px;
+	text-align: center;
+}
+#header2-top{
+	width: 100%;
+	height: 32px;
+	/*background-color: #5C3701;*/
+	color: blue;
+	font-size: 17px;
+	padding-top: 10px;
+	background-color: #E6E6FA;
+	text-align: center;
+	border-bottom: 3px solid #1cb5e0;
+}
+#sidebar{
+	float: left;
+	width: 15.8%;
+	background-color: #E6E6FA;
+	/*margin-bottom: 50px;*/
+}
+#sidebar ul{
+	list-style: none;
+}
+#sidebar a:link, #sidebar a:visited{
+	color: #464646;
+	text-decoration: none;
+	display: block;
+	padding: 10px;
+}
+#sidebar a:hover{
+	background-color: #D3D3D3;
+}
+.label-navigasi{
+	background: linear-gradient(to right, #000046, #1cb5e0);  
+	padding: 13px;
+	color: white;
+	font-weight: bold;
+}
+
+#content-container{
+	float: left;
+	width: 84.2%;
+	background-color: #F8F8FF;
+}
+#footer{
+	width: 99.4%;
+	height: 20px;
+	clear: both;
+	text-align: center;
+	padding-top: 8px;
+	background: linear-gradient(#000046, #1cb5e0);
+	color: #FFFFFF;
+}
+#label-page{
+	margin-top: 6px;
+	/*margin-bottom: 2px;*/
+	margin-left: 12px;
+	background: linear-gradient(#000046, #1cb5e0);
+	width: 97.9%;
+	color: white;
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+#content{
+	float: left;
+	width: 96.8%;
+	min-height: 454px;
+	border:2px solid #C4C4C4;
+	padding: 10px;
+	margin-bottom: 6px;
+	position: absolute;
+}
+#beranda-judul{
+	text-align: center;
+	color: blue;
+}
+#beranda-konten{
+	width: 100%;
+	padding-left: 13px;
+	padding-top: 5px;
+	/*color: red;*/
+}
+form .row { 
+	display: block;
+	/*padding: 2px 2px;*/
+	margin-bottom: 10px;
+	margin-top: 20px;
+	margin-left: 2px;
+}
+form label {
+	display: inline-block;
+	font-size: 1em;
+	/*font-weight: bold;*/
+	width: 120px;
+	padding: 3px 0;
+	color: #464646;
+	vertical-align: top;
+}
+.button {
+	/*background: linear-gradient(#000046, #1cb5e0);*/
+	background-color: #0078AA;
+	border-radius: 3px;
+	border-color: blue;
+	color: white;
+	padding: 9px 13px;
+	text-align: center;
+	margin-left: 126px;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 12px;
+}
+.button:hover {background-color: #4169E1}
+
+input[type=text], select {
+	width: 190px;
+	padding: 10px 5px;
+	margin: 0 ;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	box-sizing: border-box;
+}
+/* Removes the clear button from date inputs */
+input[type="date"]::-webkit-clear-button {
+    display: none;
+}
+/* Removes the spin button */
+input[type="date"]::-webkit-inner-spin-button { 
+    display: none;
+}
+
+/* Always display the drop down caret */
+input[type="date"]::-webkit-calendar-picker-indicator {
+    color: #2c3e50;
+}
+
+/* A few custom styles for date inputs */
+input[type="date"] {
+    appearance: none;
+    -webkit-appearance: none;
+    /* color: #95a5a6; */
+	color: black;
+	width: 175px;
+    font-family: "Helvetica", arial, sans-serif;
+    font-size: 13px;
+    border:1px solid #ecf0f1;
+    background:#ecf0f1;
+    padding:5px;
+    display: inline-block !important;
+    visibility: visible !important;
+}
+
+input[type="date"], focus {
+    /* color: #95a5a6; */
+	/* color: red; */
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+}
+
+
+  
+  
+
+

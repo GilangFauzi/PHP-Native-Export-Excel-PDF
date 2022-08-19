@@ -1,0 +1,11 @@
+ <tr>
+                                    <td><?php echo $i++ ?></td>
+                                    <td><?php echo $pinjam['tgl_pinjam']; ?></td>
+                                    <td><?php echo $pinjam['tgl_kembali']; ?></td>
+                                    <td><?php echo $pinjam['id_buku']; ?></td>
+                                    <td><?php echo $pinjam['id_anggota']; ?></td>
+                                    <td>
+                                        <a href="#" type="submit" class="buttonEdit">Edit</a>
+                                        <a href="#" type="submit" class="buttonHapus">Hapus</a>
+                                    </td>
+                                </tr>
