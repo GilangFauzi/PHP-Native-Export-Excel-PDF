@@ -79,8 +79,11 @@ $result = mysqli_query($conn, $query);
                                     <td><?php echo $buku['penulis_buku']; ?></td>
                                     <td><?php echo $buku['tahun_terbit']; ?></td>
                                     <td>
-                                        <a href="#" type="submit" class="buttonEdit">Edit</a>
-                                        <a href="#" type="submit" class="buttonHapus">Hapus</a>
+                                        <a href="updateBuku.php?id_buku=<?= $buku['id_buku'] ?>" type="submit"
+                                            class="buttonEdit">Edit</a>
+                                        <a href="../../proses/deleteBuku.php?id_buku=<?= $buku['id_buku'] ?>"
+                                            type="submit" onclick="return confirm('Data ini akan di hapus?')"
+                                            class="buttonHapus">Hapus</a>
                                     </td>
                                 </tr>
                                 <?php

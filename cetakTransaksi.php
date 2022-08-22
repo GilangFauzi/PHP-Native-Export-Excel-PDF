@@ -1,8 +1,5 @@
 <?php
 require 'proses/koneksi.php';
-
-
-
 ?>
 
 <!DOCTYPE html>

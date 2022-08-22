@@ -81,8 +81,11 @@ $result = mysqli_query($conn, $query);
                                     <td><?php echo $anggota['no_telp_anggota']; ?></td>
                                     <td><?php echo $anggota['alamat_anggota']; ?></td>
                                     <td>
-                                        <a href="#" type="submit" class="buttonEdit">Edit</a>
-                                        <a href="#" type="submit" class="buttonHapus">Hapus</a>
+                                        <a href="updateAnggota.php?id_anggota=<?= $anggota['id_anggota']; ?>"
+                                            type="submit" class="buttonEdit">Edit</a>
+                                        <a href="../../proses/deleteAnggota.php?id_anggota=<?= $anggota['id_anggota']; ?>"
+                                            type="submit" class="buttonHapus"
+                                            onclick="return confirm('Apakah yakin ingin menghapus data ini?')">Hapus</a>
                                     </td>
                                 </tr>
                                 <?php

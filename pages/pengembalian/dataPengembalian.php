@@ -83,8 +83,11 @@ $result = mysqli_query($conn, $query);
                                     <td><?php echo $pengembalian['denda']; ?></td>
                                     <td><?php echo $pengembalian['id_peminjaman']; ?></td>
                                     <td>
-                                        <a href="#" type="submit" class="buttonEdit">Edit</a>
-                                        <a href="#" type="submit" class="buttonHapus">Hapus</a>
+                                        <a href="updatePengembalian.php?id_pengembalian=<?= $pengembalian['id_pengembalian'] ?>"
+                                            type="submit" class="buttonEdit">Edit</a>
+                                        <a href="../../proses/deletePengembalian.php?id_pengembalian=<?= $pengembalian['id_pengembalian'] ?>"
+                                            type="submit" onclick="return confirm('Data ini akan di hapus?')"
+                                            class="buttonHapus">Hapus</a>
                                     </td>
                                 </tr>
                                 <?php

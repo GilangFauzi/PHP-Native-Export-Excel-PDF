@@ -82,8 +82,11 @@ $result = mysqli_query($conn, $query);
                                     <td><?php echo $pinjam['id_buku']; ?></td>
                                     <td><?php echo $pinjam['id_anggota']; ?></td>
                                     <td>
-                                        <a href="#" type="submit" class="buttonEdit">Edit</a>
-                                        <a href="#" type="submit" class="buttonHapus">Hapus</a>
+                                        <a href="updatePinjaman.php?id_peminjaman=<?= $pinjam['id_peminjaman'] ?>"
+                                            type="submit" class="buttonEdit">Edit</a>
+                                        <a href="../../proses/deletePinjaman.php?id_peminjaman=<?= $pinjam['id_peminjaman'] ?>"
+                                            type="submit" onclick="return confirm('Data ini akan di hapus?')"
+                                            class="buttonHapus">Hapus</a>
                                     </td>
                                 </tr>
                                 <?php
